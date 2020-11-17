@@ -1,3 +1,3 @@
 # projetinho para a aula do favan
 
-[site](https://blogbussi.herokuapp.com/blogs)
+## hospedado no heroku [ir ver](https://blogbussi.herokuapp.com/blogs)
