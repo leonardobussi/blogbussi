@@ -8,7 +8,7 @@ const expressSanitizer = require('express-sanitizer')
 
 const app = express();
 
-//CONECTING DB// APP CONFI
+//string de conexao
 mongoose.connect('mongodb+srv://rpg:rpg@cluster0.0ddez.mongodb.net/blogleo?retryWrites=true&w=majority', {
     useNewUrlParser: true, 
     useCreateIndex: true,
