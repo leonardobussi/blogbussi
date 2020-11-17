@@ -1,0 +1,26 @@
+<% include partials/header %>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlogBussi</title>
+</head>
+<body>
+    <div style="margin-top: 30px;" class="ui main text container segment">
+        <div class="ui huge header"><%=blog.title%></div>
+            <div class='description'>
+            <p><%-blog.body%></p>
+            </div>
+           
+            <a href='/blogs/<%=blog._id%>/edit' class='ui basic red button'>Editar</a>
+
+           <form id ='delete' action='/blogs/<%=blog._id%>?_method=DELETE' method='POST'>
+                <button class='ui red basic button' >Deletar</button>
+           </form>
+            
+         
+    </div>
+</body>
+</html>

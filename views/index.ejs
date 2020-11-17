@@ -1,0 +1,17 @@
+
+ <% include partials/header %>
+      
+    <br>
+    <br>
+    <br>
+    <br>
+    <%blogs.forEach((blog)=> {%>
+        <div style="padding: 0 25%; margin-bottom: 10px;">
+            <h2><%=blog.title%></h2>
+            <p> <strong>Conteudo:</strong>  <%=blog.body.substring(0, 300)%></p>
+            <a href='/blogs/<%=blog._id%>'>Ver tudo</a>
+            <hr>
+        </div>
+   <% })%>
+
+
