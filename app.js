@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 //ROTA INDEX (GET)
 
 app.get('/blogs', (req, res) => {
-    //RETRIEVING ALL BLOGS
+ 
     Blog.find({}, (error, blogs) => {
       if(error){
           console.log(error);
